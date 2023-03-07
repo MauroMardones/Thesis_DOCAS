@@ -2,6 +2,4 @@
 
 Contenido estructural para tesis de Doctorado Mauricio Mardones
 
-```{r echo=FALSE, out.width = "100%", fig.align='center', fig.cap="Graphical Abstract"}
-knitr::include_graphics("figures/Esquema.pdf")
-```
+![Graphical Abstract](figures/Esquema.png)

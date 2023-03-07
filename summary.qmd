@@ -6,7 +6,7 @@ In summary, this book has no content whatsoever.
 1 + 1
 ```
 
-![](figures/darwin.jpeg){fig-align="center" width="274"}
+![Darwin](figures/darwin.jpeg)
 
 ```{r}
 library(readr)

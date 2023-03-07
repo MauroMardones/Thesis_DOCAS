@@ -1,12 +1,10 @@
 # Introduction
 
-
 ```{r setup, eval=FALSE, echo = FALSE, warning = FALSE, message = FALSE}
 knitr::opts_chunk$set(collapse = TRUE, comment = "  ", fig.align = 'center', cache=FALSE)
 library(knitr)
 library(tidyverse)
 ```
-
 
 \quad
 
@@ -48,13 +46,11 @@ Cabe destacar de acuerdo a este análisis, que en la gran mayoría de los océan
 knitr::include_graphics("figures/Exa.png")
 ```
 
-[@Rijnsdorp2009] indican que la temperatura tiene un efecto directo sobre la fisiología, el crecimiento, la reproducción, el reclutamiento y el comportamiento de organismos poiquilotérmicos como los peces, moluscos, cefalópodos y crustáceos. También identifican que la temperatura tendrá un efecto sobre aspectos de la historia de vida y ontogenia de las especies, en donde, diferentes estadíos de un organismo (huevos, larvas, juveniles, adultos) pueden ser influidos por la temperatura de forma distinta (Figura 2).
+[@Rijnsdorp2009] indican que la temperatura tiene un efecto directo sobre la fisiología, el crecimiento, la reproducción, el reclutamiento y el comportamiento de organismos poiquilotérmicos como los peces, moluscos, cefalópodos y crustáceos. También identifican que la temperatura tendrá un efecto sobre aspectos de la historia de vida y ontogenia de las especies, en donde, diferentes estadíos de un organismo (huevos, larvas, juveniles, adultos) pueden ser influidos por la temperatura de forma distinta (@fig-ola).
 
 \pagebreak
 
-```{r echo=FALSE, out.width = "100%", fig.align='center', fig.cap="Diagrama conceptual de los cambios en los hábitats óptimos (basado en la temperatura del agua) con (a) latitud de la especie y/o población y (b) por etapa de vida. La flecha (a) denota un rango de temperaturas tolerables medidas para adultos durante la maduración y desove. (Rijnsdorp et al., 2009)"}
-knitr::include_graphics("figures/Exa17.pdf")
-```
+![Diagrama conceptual de imapctos de cambios ambientales en peces (Rijnsdor et al., 2009)](figures/Exa16.jpg){#fig-ola}
 
 De acuerdo también a estos resultados, es posible identificar un rango de tolerancia a la temperatura (nicho termal) muy estrecho en altas y bajas latitudes y con un amplio rango de tolerancia en latitudes intermedias (Figura 2.
 
@@ -81,7 +77,7 @@ Los límites de los rangos de tolerancia térmica desde el ecuador, a menudo coi
 \newpage
 
 ```{r echo=FALSE, out.width = "100%", fig.align='center', fig.cap="Proyección de las condiciones climáticas y las esperadas respuestas biológicas de peces en términos de tamaño y peso. Panel superior indica concentración de oxígeno disuelto proyectado. Panel inferior muestra una visión esquemática de los cambios esperados en las comunidades marinas en función del oxígeno disuelto (Cheung et al., 2013)"}
-knitr::include_graphics("figures/Exa18.pdf")
+knitr::include_graphics("figures/Exa15.png")
 ```
 
 Sin embargo, estos estudios deben ser analizados en detalle, dado que proyectar escenarios futuros de oxígeno disuelto es una tarea arriesgada. No hay consenso sobre el volumen futuro de aguas con poco oxígeno en mar abierto debido a las grandes incertidumbres sobre los posibles efectos biogeoquímicos y la evolución de la dinámica de los océanos tropicales [@IPCC2014].
@@ -95,7 +91,7 @@ El agotamiento del ozono influye directamente en el modo principal de variabilid
 [@Saba2014] estudiarón los efectos del clima a gran escala y el forzamiento físico producido por distintas fases del SAM sobre los procesos biológicos en Península Antártica. En este estudio identificaron los impactos de las fases estacionales del SAM (SAM+ y SAM-) sobre la productividad de clorofila a (chl-a) y diatomeas y su correlación con la dinámica poblacional del krill, en la cual, demostraron que estas fases modifican la estructura poblacional en la dimensión batimetrica por efectos de estos cambios. La Figura 4 ilustra cómo el clima y los procesos oceanográficos físicos, individuales y combinados de invierno y primavera (ver los meses de julio a febrero en el eje x) caen en cascada desde el fitoplancton hasta el reclutamiento de krill en un SAM- en julio y primavera (panel izquierdo ) y un SAM+ en julio y primavera (panel derecho). Todas las demás propiedades (fitoplancton, krill y huevos de krill) están generalizadas para ilustración cualitativa (+ versus -) y no representan diferencias cuantitativas entre SAM negativa y positiva.
 
 ```{r echo=FALSE, out.width = "70%", fig.align='center', fig.cap="Impactos del SAM en la productividad primaria del Océano Austral (Saba et al. 2013)"}
-knitr::include_graphics("figures/Krill.pdf")
+knitr::include_graphics("figures/Krill.png")
 ```
 
 Otro fenómeno oceanográfico-atmosférico que también tiene implicancias en los océanos es la Oscilación del Sur El Niño, que en inglés es El Niño Southern Oscilation (ENSO, por sus siglas en inglés). Un evento "El Niño" consiste principalmente en un calentamiento por sobre lo normal de la superficie del Océano Pacífico ecuatorial central y oriental (mayor a 25ºC), acompañado por un aumento del nivel del mar (mayor a 15 cm.). Estos eventos que afectan a todo el Océano Pacífico, incluso llegando los efectos demostrados al Océano Austral, se presentan en forma cíclica pero a intervalos de tiempo irregulares que fluctúan entre períodos de dos y diez años. El fenómeno se inicia en el Océano Pacífico tropical, cerca de Australia e Indonesia, alterándose con ello la presión atmosférica en zonas muy distantes entre sí, hay cambios en la dirección y en la velocidad de los vientos, así como el desplazamiento de las zonas de lluvia a la región tropical. En condiciones normales, también llamadas condiciones No-Niño, los vientos alisios (que soplan de este a oeste) acumulan una gran cantidad de agua y calor en la parte occidental de este océano. El nivel superficial del mar es, en consecuencia, aproximadamente medio metro más alto en Indonesia que frente a las costas del Perú y Ecuador. Además, la diferencia en la temperatura superficial del mar es de alrededor de 8ºC. entre ambas zonas del Pacífico. Las temperaturas frías se presentan en América del Sur por que suben las aguas profundas y producen una agua rica en nutrientes que mantiene el ecosistema marino, y dentro de esto se sustentan las grandes pesquerías pelágicas (anchoveta y sardina). Las condiciones No-Niño América del Sur implica un clima atmosférico relativamente seco.
@@ -107,7 +103,7 @@ Una abundante y bien documentada literatura apoya la tesis que las fluctuaciones
 Uno de los principales efectos del fenómeno El Niño que esgrime el trabajo de [@Arcos2004] es que la población juvenil del jurel "se acorraló" en el sector centro-sur (zona de intensa pesquería) por efecto de las malas condiciones de las aguas del norte (mas cálidas durante El Niño). Esto tuvo como consecuencia una explotación intensa de individuos de menos de 26 cm. (juveniles), con lo cual no se pudo regenerar el stock comercial los años posteriores disminuyendo los desembarques y provocando estragos por todos conocidos. La Figura 5 representa un modelo conceptual de las poblaciones de jurel bajo condiciones normales del océano (izquierda) y frente a una condición El Niño (derecha).
 
 ```{r echo=FALSE, out.width="45%",out.height="40%",fig.show='hold', fig.align='center', fig.cap="Modelo conceptual del impacto de las condiciones no Niño (izq.) y Niño (der.) sobre las poblaciones de jurel en las costas de Chile (Arcos et al. 2004)"}
-knitr::include_graphics(c("figures/Exa11.pdf","figures/Exa12.pdf"))
+knitr::include_graphics(c("figures/Exa11.png","figures/Exa12.png"))
 ```
 
 El CC ha generado desjustes temporales de fenómenos oceanográfico-atmosféricos que moldean a las poblaciones marinas en los océanos del hemisferio Sur, como son el ENSO y SAM [@Saba2014; @Morley2020; @Lovenduski2005]. Si bien las poblaciones marinas han tratado de adaptarse y sincronizarse a estos fenómenos interdecadales, cualquier otro factor natural que esté en juego, como el calentamiento global, se traducirá en la pérdida de sincronía entre óptimos ambientales y productividad biológica de estas especies, causando drásticos cambios a nivel de fisiología, distribución y productividad. [@Barange2014] identificaron cambios en el uso de hábitat de poblaciones de sardina y anchovetas en el Golfo de California y Perú, zonas afectadas por el ENSO. Estas especies alternan sincrónicamente en relación a sus biomasas, y desacoples producidos por el CC, ha generado pérdida de ajuste a las condiciones climáticas óptimas de sus poblaciones.
@@ -139,5 +135,3 @@ Debemos considerar que el Océano Austral y alrededores es rico y productivo en 
 Como señalamos anteriormente, el krill y el bacalao son especies que habitan el OA y que constituyen importantes pesquerías explotadas por un conjunto de flotas de distintos paises. En este sentido, hay que entender y anticiparse a los impactos que tendrán los forzantes sobre estas poblaciones, y de esta forma ser precautorios y adaptativos en la extracción y explotación de recursos frente a esas nuevas condiciones climáticas. Esto puede significar que las cuotas se reduzcan, o que las asignaciones de captura espaciales y/o temporales sean más explícitas. Afortunadamente hoy existe un esfuerzo global con varios organismos e instituciones internacionales que además de cautelar la sustentabilidad de las pesquerías antes citadas, están haciendo esfuerzos de investigación tratando de entender los impactos del CC en este océano, entre ellas, el Comité Científico de Investigaciones Antárticas (SCAR), el Consejo de Administradores de Programas Antárticos Nacionales (COMNAP), Asociación Internacional de Operadores Turísticos Antárticos (IAATO) y Comisión para la Conservación de los Recursos Vivos Marinos Antárticos (CCAMLR). En este contexto, hoy se desarrollan programas científicos que intentan lidiar con este desafío del conocimiento, pero las herramientas analíticas y conceptuales aún tienen que mejorar, dado que se deben integrar los más variados componentes que influyen en el CC. Sin embargo, en aspectos relacionados al manejo y evaluación de estas poblaciones, las preguntas siguen abiertas y en continuo desarrollo científico tratando de proyectar los impactos que tiene en un contexto ecosistémico y de cambios climáticos fluctuantes, y cómo ello afecta a las poblaciones marinas del Océano Austral.
 
 De acuerdo a esta revisión, existen forzantes directos e indirectos como la temperaratura, oxígeno y procesos oceanografico-atmosfericos como el SAM y ENSO que tienen impactos directas sobre las poblaciones marinas del Océano Austral. En este sentido, cambios en los niveles y tendencias de estos forzantes alterarán funciones tales como la distribución espacial, ecología y fisiología de las especies que habitan en el Océano Austral.
-
-# References

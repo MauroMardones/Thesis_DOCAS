@@ -17,6 +17,7 @@ book:
 
 bibliography: [DOCAS.bib, references.bib]
 csl: apa.csl
+fig-align: center
 format:
   html:
     theme: cosmo
