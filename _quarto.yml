@@ -12,6 +12,7 @@ book:
     - method.qmd
     - summary.qmd
     - references.qmd
+    - ANEXO 1. Time Series Analysis
 
 bibliography: [DOCAS.bib, references.bib]
 csl: apa.csl
