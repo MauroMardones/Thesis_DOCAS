@@ -52,7 +52,7 @@ knitr::include_graphics("figures/Exa.png")
 
 \pagebreak
 
-```{r echo=FALSE, out.width = "50%", fig.align='center', fig.cap="Diagrama conceptual de los cambios en los hábitats óptimos (basado en la temperatura del agua) con (a) latitud de la especie y/o población y (b) por etapa de vida. La flecha (a) denota un rango de temperaturas tolerables medidas para adultos durante la maduración y desove. (Rijnsdorp et al., 2009)"}
+```{r echo=FALSE, out.width = "100%", fig.align='center', fig.cap="Diagrama conceptual de los cambios en los hábitats óptimos (basado en la temperatura del agua) con (a) latitud de la especie y/o población y (b) por etapa de vida. La flecha (a) denota un rango de temperaturas tolerables medidas para adultos durante la maduración y desove. (Rijnsdorp et al., 2009)"}
 knitr::include_graphics("figures/Exa17.pdf")
 ```
 

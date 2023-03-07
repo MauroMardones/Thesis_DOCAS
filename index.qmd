@@ -1,9 +1,7 @@
-# Preface {.unnumbered}
+# Abstract {.unnumbered}
 
-This is a Quarto book.
+Contenido estructural para tesis de Doctorado Mauricio Mardones
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```{r}
-1 + 1
+```{r echo=FALSE, out.width = "100%", fig.align='center', fig.cap="Graphical Abstract"}
+knitr::include_graphics("figures/Esquema.pdf")
 ```
