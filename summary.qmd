@@ -6,12 +6,10 @@ In summary, this book has no content whatsoever.
 1 + 1
 ```
 
-![](figures/darwin.jpeg){width="274"}
-
+![](figures/darwin.jpeg){fig-align="center" width="274"}
 
 ```{r}
 library(readr)
 survey <- read_csv("data/ASAM_metadata_2021_v2_tidy_0.csv")
 kableExtra::kable(head(survey))
 ```
-
