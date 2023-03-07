@@ -1,4 +1,4 @@
-# Abstract {.unnumbered}
+# {.unnumbered}
 
 Contenido estructural para tesis de Doctorado Mauricio Mardones
 

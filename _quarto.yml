@@ -14,9 +14,12 @@ book:
     - summary.qmd
     - references.qmd
     #- ANEXO 1. Time Series Analysis
+    
 
 bibliography: [DOCAS.bib, references.bib]
 csl: apa.csl
+link-citations: yes
+linkcolor: blue
 fig-align: center
 format:
   html:
