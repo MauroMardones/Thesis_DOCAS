@@ -2,7 +2,8 @@ project:
   type: book
 
 book:
-  title: "Thesis_Quarto"
+  title: "Thesis DOCAS"
+  subtitle: "Format to write Thesis to PhD Antarctic and SubAntartic Science Program"
   author: "Mauro Mardones"
   date: "3/7/2023"
   chapters:

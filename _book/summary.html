@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Thesis_Quarto - 3&nbsp; Summary</title>
+<title>Thesis DOCAS - 3&nbsp; Summary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -141,7 +141,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Thesis_Quarto</a> 
+      <a href="./">Thesis DOCAS</a> 
     </div>
       </div>
       <div class="mt-2 flex-shrink-0 align-items-center">
@@ -209,7 +209,235 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>[1] 2</code></pre>
 </div>
 </div>
-<p><img src="figures/cover.png" class="img-fluid"></p>
+<p><img src="figures/darwin.jpeg" class="img-fluid" width="274"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>survey <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/ASAM_metadata_2021_v2_tidy_0.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 286 Columns: 27
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (25): Month (MON), Vessel, Contributor, Subarea, Survey name, Density es...
+dbl  (2): Year (yyyy), Frequency used for biomass estimate (kHz)
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>kableExtra<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">head</span>(survey))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Year (yyyy) </th>
+   <th style="text-align:left;"> Month (MON) </th>
+   <th style="text-align:left;"> Vessel </th>
+   <th style="text-align:left;"> Contributor </th>
+   <th style="text-align:left;"> Subarea </th>
+   <th style="text-align:left;"> Survey name </th>
+   <th style="text-align:left;"> Density estimate (g m-2) </th>
+   <th style="text-align:left;"> CV of density estimate (%) </th>
+   <th style="text-align:left;"> CV estimation method </th>
+   <th style="text-align:left;"> Survey area (km2) </th>
+   <th style="text-align:left;"> Echosounder model </th>
+   <th style="text-align:right;"> Frequency used for biomass estimate (kHz) </th>
+   <th style="text-align:left;"> Other frequencies available </th>
+   <th style="text-align:left;"> Method used for target identification </th>
+   <th style="text-align:left;"> dB-difference window </th>
+   <th style="text-align:left;"> TS model used </th>
+   <th style="text-align:left;"> Depth range integrated (m) </th>
+   <th style="text-align:left;"> Time of day sampled </th>
+   <th style="text-align:left;"> Stratum name </th>
+   <th style="text-align:left;"> Survey design description </th>
+   <th style="text-align:left;"> Reference </th>
+   <th style="text-align:left;"> Note </th>
+   <th style="text-align:left;"> empty1 </th>
+   <th style="text-align:left;"> sourceexl </th>
+   <th style="text-align:left;"> Net </th>
+   <th style="text-align:left;"> Tow design </th>
+   <th style="text-align:left;"> ASAM_NOTES </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 1996 </td>
+   <td style="text-align:left;"> Dec </td>
+   <td style="text-align:left;"> RRS James Clark Ross </td>
+   <td style="text-align:left;"> UK </td>
+   <td style="text-align:left;"> 48.3 </td>
+   <td style="text-align:left;"> POETS-WCB JR17 </td>
+   <td style="text-align:left;"> 31.7 </td>
+   <td style="text-align:left;"> 26 </td>
+   <td style="text-align:left;"> Jolly and Hampton </td>
+   <td style="text-align:left;"> 8000 </td>
+   <td style="text-align:left;"> EK500 </td>
+   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:left;"> 38, 200 </td>
+   <td style="text-align:left;"> dB difference (120-38 &amp; 200-120) </td>
+   <td style="text-align:left;"> variable </td>
+   <td style="text-align:left;"> full SDWBA (ASAM 2010 parameterisation) </td>
+   <td style="text-align:left;"> 250 </td>
+   <td style="text-align:left;"> daylight only </td>
+   <td style="text-align:left;"> WCB </td>
+   <td style="text-align:left;"> Parallel transects </td>
+   <td style="text-align:left;"> Fielding et al. 2014 </td>
+   <td style="text-align:left;"> See map </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> GBR </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1996 </td>
+   <td style="text-align:left;"> Dec </td>
+   <td style="text-align:left;"> RRS James Clark Ross </td>
+   <td style="text-align:left;"> UK </td>
+   <td style="text-align:left;"> 48.3 </td>
+   <td style="text-align:left;"> ECB JR17 </td>
+   <td style="text-align:left;"> 96.3 </td>
+   <td style="text-align:left;"> 14.3 </td>
+   <td style="text-align:left;"> Jolly and Hampton </td>
+   <td style="text-align:left;"> 8000 </td>
+   <td style="text-align:left;"> EK500 </td>
+   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:left;"> 38, 200 </td>
+   <td style="text-align:left;"> dB difference (120-38 &amp; 200-120) </td>
+   <td style="text-align:left;"> variable </td>
+   <td style="text-align:left;"> full SDWBA (ASAM 2010 parameterisation) </td>
+   <td style="text-align:left;"> 250 </td>
+   <td style="text-align:left;"> daylight only </td>
+   <td style="text-align:left;"> ECB </td>
+   <td style="text-align:left;"> Parallel transects </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> GBR </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1998 </td>
+   <td style="text-align:left;"> Jan </td>
+   <td style="text-align:left;"> RRS James Clark Ross </td>
+   <td style="text-align:left;"> UK </td>
+   <td style="text-align:left;"> 48.3 </td>
+   <td style="text-align:left;"> POETS-WCB JR28 </td>
+   <td style="text-align:left;"> 38.9 </td>
+   <td style="text-align:left;"> 28 </td>
+   <td style="text-align:left;"> Jolly and Hampton </td>
+   <td style="text-align:left;"> 8000 </td>
+   <td style="text-align:left;"> EK500 </td>
+   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:left;"> 38, 200 </td>
+   <td style="text-align:left;"> dB difference (120-38 &amp; 200-120) </td>
+   <td style="text-align:left;"> variable </td>
+   <td style="text-align:left;"> full SDWBA (ASAM 2010 parameterisation) </td>
+   <td style="text-align:left;"> 250 </td>
+   <td style="text-align:left;"> daylight only </td>
+   <td style="text-align:left;"> WCB </td>
+   <td style="text-align:left;"> Parallel transects </td>
+   <td style="text-align:left;"> Fielding et al. 2014 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> GBR </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1998 </td>
+   <td style="text-align:left;"> Jan </td>
+   <td style="text-align:left;"> RRS James Clark Ross </td>
+   <td style="text-align:left;"> UK </td>
+   <td style="text-align:left;"> 48.3 </td>
+   <td style="text-align:left;"> ECB JR28 </td>
+   <td style="text-align:left;"> 427.4 </td>
+   <td style="text-align:left;"> 20.1 </td>
+   <td style="text-align:left;"> Jolly and Hampton </td>
+   <td style="text-align:left;"> 8000 </td>
+   <td style="text-align:left;"> EK500 </td>
+   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:left;"> 38, 200 </td>
+   <td style="text-align:left;"> dB difference (120-38 &amp; 200-120) </td>
+   <td style="text-align:left;"> variable </td>
+   <td style="text-align:left;"> full SDWBA (ASAM 2010 parameterisation) </td>
+   <td style="text-align:left;"> 250 </td>
+   <td style="text-align:left;"> daylight only </td>
+   <td style="text-align:left;"> ECB </td>
+   <td style="text-align:left;"> Parallel transects </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> GBR </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1999 </td>
+   <td style="text-align:left;"> Jan </td>
+   <td style="text-align:left;"> RRS James Clark Ross </td>
+   <td style="text-align:left;"> UK </td>
+   <td style="text-align:left;"> 48.3 </td>
+   <td style="text-align:left;"> POETS-WCB JR38 </td>
+   <td style="text-align:left;"> 9.7 </td>
+   <td style="text-align:left;"> 19.8 </td>
+   <td style="text-align:left;"> Jolly and Hampton </td>
+   <td style="text-align:left;"> 8000 </td>
+   <td style="text-align:left;"> EK500 </td>
+   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:left;"> 38, 200 </td>
+   <td style="text-align:left;"> dB difference (120-38 &amp; 200-120) </td>
+   <td style="text-align:left;"> variable </td>
+   <td style="text-align:left;"> full SDWBA (ASAM 2010 parameterisation) </td>
+   <td style="text-align:left;"> 250 </td>
+   <td style="text-align:left;"> daylight only </td>
+   <td style="text-align:left;"> WCB </td>
+   <td style="text-align:left;"> Parallel transects </td>
+   <td style="text-align:left;"> Fielding et al. 2014 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> GBR </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1998 </td>
+   <td style="text-align:left;"> Dec </td>
+   <td style="text-align:left;"> RRS James Clark Ross </td>
+   <td style="text-align:left;"> UK </td>
+   <td style="text-align:left;"> 48.3 </td>
+   <td style="text-align:left;"> ECB JR38 </td>
+   <td style="text-align:left;"> 23.7 </td>
+   <td style="text-align:left;"> 57.8 </td>
+   <td style="text-align:left;"> Jolly and Hampton </td>
+   <td style="text-align:left;"> 8000 </td>
+   <td style="text-align:left;"> EK500 </td>
+   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:left;"> 38, 200 </td>
+   <td style="text-align:left;"> dB difference (120-38 &amp; 200-120) </td>
+   <td style="text-align:left;"> variable </td>
+   <td style="text-align:left;"> full SDWBA (ASAM 2010 parameterisation) </td>
+   <td style="text-align:left;"> 250 </td>
+   <td style="text-align:left;"> daylight only </td>
+   <td style="text-align:left;"> ECB </td>
+   <td style="text-align:left;"> Parallel transects </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> GBR </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
 
 
 
